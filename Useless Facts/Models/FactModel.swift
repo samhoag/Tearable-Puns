@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct Fact: Codable {
+    let id: String
+    let text: String
+    let source: String
+    let source_url: String
+    let language: String
+    let permalink: String
+}

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct DadJoke: Codable {
+    let id: String
+    let joke: String
+    let status: Int
+}
