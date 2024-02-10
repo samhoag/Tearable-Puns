@@ -11,6 +11,10 @@
 		C03DBC862B772CCB006D0E19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DBC852B772CCB006D0E19 /* ContentView.swift */; };
 		C03DBC882B772CCD006D0E19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03DBC872B772CCD006D0E19 /* Assets.xcassets */; };
 		C03DBC8B2B772CCD006D0E19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03DBC8A2B772CCD006D0E19 /* Preview Assets.xcassets */; };
+		C03DBC952B772F65006D0E19 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DBC942B772F65006D0E19 /* FactModel.swift */; };
+		C03DBC972B772FC1006D0E19 /* FactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DBC962B772FC1006D0E19 /* FactViewModel.swift */; };
+		C03DBC992B7772E4006D0E19 /* DadJokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DBC982B7772E4006D0E19 /* DadJokeModel.swift */; };
+		C03DBC9B2B7773A3006D0E19 /* DadJokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DBC9A2B7773A3006D0E19 /* DadJokeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		C03DBC852B772CCB006D0E19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C03DBC872B772CCD006D0E19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C03DBC8A2B772CCD006D0E19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C03DBC942B772F65006D0E19 /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		C03DBC962B772FC1006D0E19 /* FactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewModel.swift; sourceTree = "<group>"; };
+		C03DBC982B7772E4006D0E19 /* DadJokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokeModel.swift; sourceTree = "<group>"; };
+		C03DBC9A2B7773A3006D0E19 /* DadJokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		C03DBC822B772CCB006D0E19 /* Useless Facts */ = {
 			isa = PBXGroup;
 			children = (
+				C03DBC932B772D42006D0E19 /* Models */,
+				C03DBC922B772D3B006D0E19 /* ViewModels */,
+				C03DBC912B772D31006D0E19 /* Views */,
 				C03DBC832B772CCB006D0E19 /* Useless_FactsApp.swift */,
-				C03DBC852B772CCB006D0E19 /* ContentView.swift */,
 				C03DBC872B772CCD006D0E19 /* Assets.xcassets */,
 				C03DBC892B772CCD006D0E19 /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				C03DBC8A2B772CCD006D0E19 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C03DBC912B772D31006D0E19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C03DBC852B772CCB006D0E19 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C03DBC922B772D3B006D0E19 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C03DBC962B772FC1006D0E19 /* FactViewModel.swift */,
+				C03DBC9A2B7773A3006D0E19 /* DadJokeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C03DBC932B772D42006D0E19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C03DBC942B772F65006D0E19 /* FactModel.swift */,
+				C03DBC982B7772E4006D0E19 /* DadJokeModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C03DBC972B772FC1006D0E19 /* FactViewModel.swift in Sources */,
+				C03DBC952B772F65006D0E19 /* FactModel.swift in Sources */,
+				C03DBC992B7772E4006D0E19 /* DadJokeModel.swift in Sources */,
 				C03DBC862B772CCB006D0E19 /* ContentView.swift in Sources */,
 				C03DBC842B772CCB006D0E19 /* Useless_FactsApp.swift in Sources */,
+				C03DBC9B2B7773A3006D0E19 /* DadJokeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +315,7 @@
 				DEVELOPMENT_TEAM = UA6QK2UR33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Puns;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +345,7 @@
 				DEVELOPMENT_TEAM = UA6QK2UR33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Puns;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
