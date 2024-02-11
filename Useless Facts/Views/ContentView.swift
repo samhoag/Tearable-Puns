@@ -58,6 +58,10 @@ struct ContentView: View {
                 }
             }
             .frame(width: .infinity, height: .infinity)
+            .refreshable{
+                viewModel.fetchData()
+                
+            }
             
             .padding()
             

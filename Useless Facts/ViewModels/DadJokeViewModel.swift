@@ -15,11 +15,10 @@ class DadJokeViewModel: ObservableObject {
     
     
     init() {
-        // Puts 3 jokes in the lineup
-        fetchData(number_jokes: 3)
+        fetchData()
     }
     
-    func fetchData(number_jokes: Int) {
+    func fetchData() {
         self.backgroundColor = Color()
         let url = URL(string: "https://icanhazdadjoke.com/")!
             var request = URLRequest(url: url)
@@ -32,13 +31,10 @@ class DadJokeViewModel: ObservableObject {
                 }
 
                 do {
-                    if number_jokes > 0 {
-                        self.fetchData(number_jokes: number_jokes - 1)
-                    } else {
-                        self.joke_lineup.append(try JSONDecoder().decode(DadJoke.self, from: data).joke)
-                        print(self.backgroundColor)
-                        self.joke = self.joke_lineup.removeFirst()
-                    }
+                    self.joke_lineup.append(try JSONDecoder().decode(DadJoke.self, from: data).joke)
+                    print(self.backgroundColor)
+                    self.joke = self.joke_lineup.removeFirst()
+    
                 } catch {
                     print("Error decoding!")
                 }
